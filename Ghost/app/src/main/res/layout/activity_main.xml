@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.ghost.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="104dp"
+            android:digits="qwertyuioplkjhgfdsazxcvbnm"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:inputType="textPersonName"
+            android:maxLength="1"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:text="Challenge"
+            android:onClick="onPlayerChallenge"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="51dp"
+            android:layout_toEndOf="@+id/textView2"
+            android:layout_toRightOf="@+id/textView2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:visibility="visible"
+            android:text=""
+            android:gravity = "center_horizontal"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="46dp"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:visibility="visible"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:text="CLICK IF READY"
+            android:onClick="compMove"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
